@@ -1,0 +1,1151 @@
+{
+  "datasets": [
+    {
+      "name": "6068dd01",
+      "displayName": "customer_demographics_summary",
+      "config": {
+        "version": "1.1",
+        "source": "bank_of_fiction.gold.customer_demographics_summary",
+        "dimensions": [
+          {
+            "name": "Geography",
+            "expr": "source.Geography",
+            "displayName": "Geography"
+          },
+          {
+            "name": "total_customers",
+            "expr": "source.total_customers",
+            "displayName": "Total Customers"
+          },
+          {
+            "name": "male_customers",
+            "expr": "source.male_customers",
+            "displayName": "Male Customers"
+          },
+          {
+            "name": "female_customers",
+            "expr": "source.female_customers",
+            "displayName": "Female Customers"
+          },
+          {
+            "name": "male_percentage",
+            "expr": "source.male_percentage",
+            "displayName": "Male Percentage"
+          },
+          {
+            "name": "female_percentage",
+            "expr": "source.female_percentage",
+            "displayName": "Female Percentage"
+          },
+          {
+            "name": "avg_age",
+            "expr": "source.avg_age",
+            "displayName": "Avg Age"
+          },
+          {
+            "name": "min_age",
+            "expr": "source.min_age",
+            "displayName": "Min Age"
+          },
+          {
+            "name": "max_age",
+            "expr": "source.max_age",
+            "displayName": "Max Age"
+          },
+          {
+            "name": "median_age",
+            "expr": "source.median_age",
+            "displayName": "Median Age"
+          },
+          {
+            "name": "avg_credit_score",
+            "expr": "source.avg_credit_score",
+            "displayName": "Avg Credit Score"
+          },
+          {
+            "name": "min_credit_score",
+            "expr": "source.min_credit_score",
+            "displayName": "Min Credit Score"
+          },
+          {
+            "name": "max_credit_score",
+            "expr": "source.max_credit_score",
+            "displayName": "Max Credit Score"
+          },
+          {
+            "name": "avg_tenure_years",
+            "expr": "source.avg_tenure_years",
+            "displayName": "Avg Tenure Years"
+          },
+          {
+            "name": "min_tenure",
+            "expr": "source.min_tenure",
+            "displayName": "Min Tenure"
+          },
+          {
+            "name": "max_tenure",
+            "expr": "source.max_tenure",
+            "displayName": "Max Tenure"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "4e772c49",
+      "displayName": "customer_financial_metrics",
+      "config": {
+        "version": "1.1",
+        "source": "bank_of_fiction.gold.customer_financial_metrics",
+        "dimensions": [
+          {
+            "name": "Geography",
+            "expr": "source.Geography",
+            "displayName": "Geography"
+          },
+          {
+            "name": "total_customers",
+            "expr": "source.total_customers",
+            "displayName": "Total Customers"
+          },
+          {
+            "name": "avg_estimated_salary",
+            "expr": "source.avg_estimated_salary",
+            "displayName": "Avg Estimated Salary"
+          },
+          {
+            "name": "min_estimated_salary",
+            "expr": "source.min_estimated_salary",
+            "displayName": "Min Estimated Salary"
+          },
+          {
+            "name": "max_estimated_salary",
+            "expr": "source.max_estimated_salary",
+            "displayName": "Max Estimated Salary"
+          },
+          {
+            "name": "salary_25th_percentile",
+            "expr": "source.salary_25th_percentile",
+            "displayName": "Salary 25th Percentile"
+          },
+          {
+            "name": "salary_median",
+            "expr": "source.salary_median",
+            "displayName": "Salary Median"
+          },
+          {
+            "name": "salary_75th_percentile",
+            "expr": "source.salary_75th_percentile",
+            "displayName": "Salary 75th Percentile"
+          },
+          {
+            "name": "low_income_customers",
+            "expr": "source.low_income_customers",
+            "displayName": "Low Income Customers"
+          },
+          {
+            "name": "mid_income_customers",
+            "expr": "source.mid_income_customers",
+            "displayName": "Mid Income Customers"
+          },
+          {
+            "name": "high_income_customers",
+            "expr": "source.high_income_customers",
+            "displayName": "High Income Customers"
+          },
+          {
+            "name": "low_income_pct",
+            "expr": "source.low_income_pct",
+            "displayName": "Low Income Pct"
+          },
+          {
+            "name": "mid_income_pct",
+            "expr": "source.mid_income_pct",
+            "displayName": "Mid Income Pct"
+          },
+          {
+            "name": "high_income_pct",
+            "expr": "source.high_income_pct",
+            "displayName": "High Income Pct"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ac5d9bfa",
+      "displayName": "customer_tenure_analysis",
+      "config": {
+        "version": "1.1",
+        "source": "bank_of_fiction.gold.customer_tenure_analysis",
+        "dimensions": [
+          {
+            "name": "Geography",
+            "expr": "source.Geography",
+            "displayName": "Geography"
+          },
+          {
+            "name": "total_customers",
+            "expr": "source.total_customers",
+            "displayName": "Total Customers"
+          },
+          {
+            "name": "avg_tenure_years",
+            "expr": "source.avg_tenure_years",
+            "displayName": "Avg Tenure Years"
+          },
+          {
+            "name": "min_tenure",
+            "expr": "source.min_tenure",
+            "displayName": "Min Tenure"
+          },
+          {
+            "name": "max_tenure",
+            "expr": "source.max_tenure",
+            "displayName": "Max Tenure"
+          },
+          {
+            "name": "median_tenure",
+            "expr": "source.median_tenure",
+            "displayName": "Median Tenure"
+          },
+          {
+            "name": "new_customers",
+            "expr": "source.new_customers",
+            "displayName": "New Customers"
+          },
+          {
+            "name": "established_customers",
+            "expr": "source.established_customers",
+            "displayName": "Established Customers"
+          },
+          {
+            "name": "loyal_customers",
+            "expr": "source.loyal_customers",
+            "displayName": "Loyal Customers"
+          },
+          {
+            "name": "new_customers_pct",
+            "expr": "source.new_customers_pct",
+            "displayName": "New Customers Pct"
+          },
+          {
+            "name": "established_customers_pct",
+            "expr": "source.established_customers_pct",
+            "displayName": "Established Customers Pct"
+          },
+          {
+            "name": "loyal_customers_pct",
+            "expr": "source.loyal_customers_pct",
+            "displayName": "Loyal Customers Pct"
+          },
+          {
+            "name": "avg_credit_score_new",
+            "expr": "source.avg_credit_score_new",
+            "displayName": "Avg Credit Score New"
+          },
+          {
+            "name": "avg_credit_score_established",
+            "expr": "source.avg_credit_score_established",
+            "displayName": "Avg Credit Score Established"
+          },
+          {
+            "name": "avg_credit_score_loyal",
+            "expr": "source.avg_credit_score_loyal",
+            "displayName": "Avg Credit Score Loyal"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "a5d47644",
+      "displayName": "bank_churn_clean",
+      "config": {
+        "version": "1.1",
+        "source": "bank_of_fiction.silver.bank_churn_clean",
+        "dimensions": [
+          {
+            "name": "CustomerId",
+            "expr": "source.CustomerId",
+            "comment": "Unique identifier for each customer in the database, allowing for tracking and analysis of individual customer behaviors and churn patterns.",
+            "displayName": "Customer Id"
+          },
+          {
+            "name": "Surname",
+            "expr": "source.Surname",
+            "comment": "Represents the last name of the customer, providing a personal identifier that can aid in demographic analysis.",
+            "displayName": "Surname"
+          },
+          {
+            "name": "CreditScore",
+            "expr": "source.CreditScore",
+            "comment": "Indicates the customer's creditworthiness, which can be a significant factor in understanding their likelihood of remaining with the bank.",
+            "displayName": "Credit Score"
+          },
+          {
+            "name": "Geography",
+            "expr": "source.Geography",
+            "displayName": "Geography"
+          },
+          {
+            "name": "Gender",
+            "expr": "source.Gender",
+            "comment": "Specifies the gender of the customer, which can help in demographic segmentation and understanding of different customer behaviors.",
+            "displayName": "Gender"
+          },
+          {
+            "name": "Age",
+            "expr": "source.Age",
+            "comment": "Represents the customer's age, allowing for age-related analysis in customer retention strategies.",
+            "displayName": "Age"
+          },
+          {
+            "name": "Tenure",
+            "expr": "source.Tenure",
+            "comment": "Indicates the number of years the customer has been with the bank, offering insights into loyalty and engagement trends.",
+            "displayName": "Tenure"
+          },
+          {
+            "name": "EstimatedSalary",
+            "expr": "source.EstimatedSalary",
+            "displayName": "Estimated Salary"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "name": "5d0bd215",
+      "displayName": "Untitled page",
+      "layout": [
+        {
+          "widget": {
+            "name": "header",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## Customer Analytics Executive Summary\n",
+                "Key insights across demographics, financials, and customer tenure"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "total_customers",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "6068dd01",
+                  "fields": [
+                    {
+                      "name": "sum(total_customers)",
+                      "expression": "SUM(`total_customers`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Total Customers",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "sum(total_customers)",
+                  "displayName": "Total Customers"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 15,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "customers_by_geography",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "6068dd01",
+                  "fields": [
+                    {
+                      "name": "Geography",
+                      "expression": "`Geography`"
+                    },
+                    {
+                      "name": "sum(total_customers)",
+                      "expression": "SUM(`total_customers`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Customers by Geography",
+                "showTitle": true
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "Geography",
+                  "displayName": "Geography",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(total_customers)",
+                  "displayName": "Total Customers",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 19,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "gender_distribution",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "6068dd01",
+                  "fields": [
+                    {
+                      "name": "Geography",
+                      "expression": "`Geography`"
+                    },
+                    {
+                      "name": "sum(male_customers)",
+                      "expression": "SUM(`male_customers`)"
+                    },
+                    {
+                      "name": "sum(female_customers)",
+                      "expression": "SUM(`female_customers`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Gender Distribution by Geography",
+                "showTitle": true
+              },
+              "mark": {
+                "layout": "group"
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "Geography",
+                  "displayName": "Geography",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fields": [
+                    {
+                      "fieldName": "sum(male_customers)",
+                      "displayName": "Total Male Customers"
+                    },
+                    {
+                      "fieldName": "sum(female_customers)",
+                      "displayName": "Total Female Customers"
+                    }
+                  ],
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 19,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "income_segments",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "4e772c49",
+                  "fields": [
+                    {
+                      "name": "Geography",
+                      "expression": "`Geography`"
+                    },
+                    {
+                      "name": "sum(low_income_customers)",
+                      "expression": "SUM(`low_income_customers`)"
+                    },
+                    {
+                      "name": "sum(mid_income_customers)",
+                      "expression": "SUM(`mid_income_customers`)"
+                    },
+                    {
+                      "name": "sum(high_income_customers)",
+                      "expression": "SUM(`high_income_customers`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Income Distribution by Geography",
+                "showTitle": true
+              },
+              "mark": {
+                "layout": "stack"
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "Geography",
+                  "displayName": "Geography",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fields": [
+                    {
+                      "fieldName": "sum(low_income_customers)",
+                      "displayName": "Low Income"
+                    },
+                    {
+                      "fieldName": "sum(mid_income_customers)",
+                      "displayName": "Mid Income"
+                    },
+                    {
+                      "fieldName": "sum(high_income_customers)",
+                      "displayName": "High Income"
+                    }
+                  ],
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 26,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "tenure_segments",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ac5d9bfa",
+                  "fields": [
+                    {
+                      "name": "Geography",
+                      "expression": "`Geography`"
+                    },
+                    {
+                      "name": "sum(new_customers)",
+                      "expression": "SUM(`new_customers`)"
+                    },
+                    {
+                      "name": "sum(established_customers)",
+                      "expression": "SUM(`established_customers`)"
+                    },
+                    {
+                      "name": "sum(loyal_customers)",
+                      "expression": "SUM(`loyal_customers`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Customer Tenure Segments",
+                "showTitle": true
+              },
+              "mark": {
+                "layout": "stack"
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "Geography",
+                  "displayName": "Geography",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fields": [
+                    {
+                      "fieldName": "sum(new_customers)",
+                      "displayName": "New"
+                    },
+                    {
+                      "fieldName": "sum(established_customers)",
+                      "displayName": "Established"
+                    },
+                    {
+                      "fieldName": "sum(loyal_customers)",
+                      "displayName": "Loyal"
+                    }
+                  ],
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 26,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "avg_credit_score",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "6068dd01",
+                  "fields": [
+                    {
+                      "name": "avg(avg_credit_score)",
+                      "expression": "AVG(`avg_credit_score`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Average Credit Score",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(avg_credit_score)",
+                  "displayName": "Avg Credit Score"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 3,
+            "y": 15,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "avg_salary",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "4e772c49",
+                  "fields": [
+                    {
+                      "name": "avg(avg_estimated_salary)",
+                      "expression": "AVG(`avg_estimated_salary`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Average Salary",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(avg_estimated_salary)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "EUR",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  },
+                  "displayName": "Avg Salary"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 15,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "avg_tenure",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ac5d9bfa",
+                  "fields": [
+                    {
+                      "name": "avg(avg_tenure_years)",
+                      "expression": "AVG(`avg_tenure_years`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Average Tenure (Years)",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(avg_tenure_years)",
+                  "displayName": "Avg Tenure"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 9,
+            "y": 15,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "metrics_header",
+            "multilineTextboxSpec": {
+              "lines": [
+                "### Key Performance Metrics"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 14,
+            "width": 12,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "demographics_header",
+            "multilineTextboxSpec": {
+              "lines": [
+                "### Customer Demographics"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 18,
+            "width": 12,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "financial_header",
+            "multilineTextboxSpec": {
+              "lines": [
+                "### Financial Analysis"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 25,
+            "width": 6,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "tenure_header",
+            "multilineTextboxSpec": {
+              "lines": [
+                "### Customer Tenure Analysis"
+              ]
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 25,
+            "width": 6,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "executive_summary",
+            "multilineTextboxSpec": {
+              "lines": [
+                "### Executive Summary\n",
+                "\n",
+                "**Customer Base Overview**: The Bank of Fiction serves **10,000 customers** across three European markets (France, Germany, Spain), with France representing approximately 50% of the total customer base.\n",
+                "\n",
+                "**Key Financial Insights**:\n",
+                "* Average customer salary of **€100K** indicates a premium banking segment\n",
+                "* Income distribution shows balanced segmentation across low, mid, and high-income brackets\n",
+                "* Geographic consistency in financial profiles suggests effective market positioning\n",
+                "\n",
+                "**Customer Quality Metrics**:\n",
+                "* Average credit score of **650** demonstrates solid creditworthiness across the portfolio\n",
+                "* Customer tenure averaging **5 years** indicates strong retention and relationship stability\n",
+                "* Balanced mix of new, established, and loyal customers ensures sustainable growth\n",
+                "\n",
+                "**Strategic Implications**: The portfolio demonstrates healthy diversification across geographies with consistent quality metrics, positioning the bank well for continued growth in the European market."
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 7,
+            "width": 12,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "problem_statement",
+            "multilineTextboxSpec": {
+              "lines": [
+                "### Problem Statement & Analysis Objectives\n",
+                "\n",
+                "**Business Context**: As the Bank of Fiction expands its operations across three European markets, leadership requires comprehensive visibility into customer portfolio composition, financial profiles, and relationship quality to inform strategic growth decisions.\n",
+                "\n",
+                "**Key Business Questions**:\n",
+                "* How is our customer base distributed across geographies, and what are the demographic characteristics?\n",
+                "* What is the financial profile of our customers, and how does income segmentation vary by market?\n",
+                "* How strong are our customer relationships as measured by tenure and credit quality?\n",
+                "* Are there meaningful differences in customer quality metrics across our European markets?\n",
+                "\n",
+                "**Analysis Objectives**:\n",
+                "1. **Portfolio Assessment**: Quantify total customer base and geographic distribution\n",
+                "2. **Financial Profiling**: Analyze income levels and salary distributions across markets\n",
+                "3. **Relationship Quality**: Evaluate customer tenure, loyalty segments, and creditworthiness\n",
+                "4. **Market Comparison**: Identify geographic patterns in customer composition and quality\n",
+                "5. **Strategic Insights**: Provide actionable recommendations for growth and risk management"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 2,
+            "width": 12,
+            "height": 5
+          }
+        },
+        {
+          "widget": {
+            "name": "recommendations",
+            "multilineTextboxSpec": {
+              "lines": [
+                "### Strategic Recommendations\n",
+                "\n",
+                "**1. Market Expansion Priorities**\n",
+                "* **France Optimization**: With 50% market share, focus on deepening wallet share through cross-sell initiatives targeting the established high-income segment\n",
+                "* **Germany & Spain Growth**: Accelerate customer acquisition in these balanced markets (25% each) where infrastructure investment can yield proportional returns\n",
+                "* **Income Segmentation Strategy**: Develop targeted products for each income tier, particularly premium services for the high-income segment across all geographies\n",
+                "\n",
+                "**2. Customer Retention & Loyalty Enhancement**\n",
+                "* **Tenure-Based Programs**: Implement graduated loyalty benefits starting at 3 years to convert new customers to established status\n",
+                "* **Geographic Retention Focus**: Analyze churn patterns by market to identify region-specific retention levers\n",
+                "* **Credit Score Monitoring**: Proactive engagement with customers showing credit score declines to prevent attrition\n",
+                "\n",
+                "**3. Risk Management Initiatives**\n",
+                "* **Credit Quality Maintenance**: Current 650 average score is solid; maintain underwriting standards while exploring opportunities in the 600-700 range\n",
+                "* **Portfolio Diversification**: Balance growth across income segments to mitigate concentration risk in high-income segment\n",
+                "* **Geographic Risk Balance**: Monitor macroeconomic indicators across markets to adjust exposure as needed\n",
+                "\n",
+                "**4. Revenue Optimization**\n",
+                "* **Premium Product Development**: €100K average salary suggests strong capacity for wealth management and investment products\n",
+                "* **Tenure-Based Pricing**: Reward loyal customers (5+ years) with preferential rates to enhance lifetime value\n",
+                "* **Cross-Border Services**: Leverage multi-country presence to offer regional banking solutions for internationally mobile customers\n",
+                "\n",
+                "**5. Data & Analytics Next Steps**\n",
+                "* **Predictive Analytics**: Develop churn prediction models using tenure, credit score, and engagement data\n",
+                "* **Customer Segmentation Refinement**: Create micro-segments within income tiers for personalized marketing\n",
+                "* **Real-Time Monitoring**: Implement automated alerts for significant portfolio metric changes by geography"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 32,
+            "width": 12,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "appendix",
+            "multilineTextboxSpec": {
+              "lines": [
+                "### Appendix\n",
+                "\n",
+                "**A. Data Sources**\n",
+                "* **Customer Demographics Summary**: `bank_of_fiction.gold.customer_demographics_summary`\n",
+                "  * Contains geographic distribution, age, gender, credit scores, and tenure data\n",
+                "  * Aggregated at geography level with statistical measures (averages, min/max, medians)\n",
+                "* **Customer Financial Metrics**: `bank_of_fiction.gold.customer_financial_metrics`\n",
+                "  * Income and salary data with percentile distributions\n",
+                "  * Income segmentation categories and percentages by geography\n",
+                "* **Customer Tenure Analysis**: `bank_of_fiction.gold.customer_tenure_analysis`\n",
+                "  * Tenure segments (new, established, loyal) with definitions\n",
+                "  * Credit score analysis by tenure segment\n",
+                "\n",
+                "**B. Methodology & Definitions**\n",
+                "* **Income Segments**:\n",
+                "  * Low Income: < €50,000 annual salary\n",
+                "  * Mid Income: €50,000 - €100,000 annual salary\n",
+                "  * High Income: > €100,000 annual salary\n",
+                "* **Tenure Categories**:\n",
+                "  * New Customers: 0-2 years with the bank\n",
+                "  * Established Customers: 3-5 years with the bank\n",
+                "  * Loyal Customers: 6+ years with the bank\n",
+                "* **Credit Score Scale**: Standard FICO-style scoring (300-850 range)\n",
+                "* **Geographic Coverage**: France, Germany, Spain (Eurozone markets)\n",
+                "\n",
+                "**C. Analysis Period & Assumptions**\n",
+                "* Analysis Date: May 6, 2026\n",
+                "* Currency: EUR (Euro) for all financial metrics\n",
+                "* Data reflects active customer accounts as of analysis date\n",
+                "* Aggregations computed using SQL metric views on Unity Catalog tables\n",
+                "\n",
+                "**D. Technical Notes**\n",
+                "* Dashboard powered by 3 metric view datasets (DLMV)\n",
+                "* Interactive filtering available via Geography selector\n",
+                "* All percentages rounded to 2 decimal places\n",
+                "* Averages calculated using arithmetic mean across all customers in segment\n",
+                "\n",
+                "**E. Contact & Updates**\n",
+                "* Dashboard Owner: Bank of Fiction Analytics Team\n",
+                "* Refresh Schedule: Updated monthly with latest customer data\n",
+                "* For questions or data requests: Contact analytics@bankoffiction.eu"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 40,
+            "width": 12,
+            "height": 7
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    },
+    {
+      "name": "global_filters",
+      "displayName": "Global Filters",
+      "layout": [
+        {
+          "widget": {
+            "name": "geography_filter",
+            "queries": [
+              {
+                "name": "dashboards/01f14965e79d11498290efb0fd9e3e79/datasets/01f1496617c110e1b9008c518e3828a7_Geography",
+                "query": {
+                  "datasetName": "6068dd01",
+                  "fields": [
+                    {
+                      "name": "Geography",
+                      "expression": "`Geography`"
+                    },
+                    {
+                      "name": "Geography_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "scale": {
+                "type": "categorical",
+                "sort": {
+                  "by": "natural-order"
+                }
+              },
+              "frame": {
+                "title": "Geography Filter",
+                "showTitle": true
+              },
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "Geography",
+                    "queryName": "dashboards/01f14965e79d11498290efb0fd9e3e79/datasets/01f1496617c110e1b9008c518e3828a7_Geography"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 4
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_GLOBAL_FILTERS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "canvasBackgroundColor": {
+        "light": "#F8F9FA",
+        "dark": "#1A1D21"
+      },
+      "widgetBackgroundColor": {
+        "light": "#FFFFFF",
+        "dark": "#242831"
+      },
+      "widgetBorderColor": {
+        "light": "#E0E3E7",
+        "dark": "#3A3F4A"
+      },
+      "fontColor": {
+        "light": "#2C3E50",
+        "dark": "#E8EAED"
+      },
+      "selectionColor": {
+        "light": "#1E88E5",
+        "dark": "#42A5F5"
+      },
+      "visualizationColors": [
+        "#1E88E5",
+        "#26A69A",
+        "#FFA726",
+        "#AB47BC",
+        "#66BB6A",
+        "#EF5350",
+        "#5C6BC0",
+        "#FFCA28"
+      ],
+      "widgetHeaderAlignment": "LEFT",
+      "fontFamily": "Arial"
+    },
+    "applyModeEnabled": false
+  }
+}
